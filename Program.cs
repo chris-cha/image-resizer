@@ -15,17 +15,17 @@ namespace ProPlan.ImageResizer
     {
         static void Main(string[] args)
         {
-            //if (args.Length != 1)
-            //{
-            //    Console.WriteLine("This Command Execute Following tasks:");
-            //    Console.WriteLine("Create OrigImage fold");
-            //    Console.WriteLine("MOVE all image from ContestImages fold to OrigImage");
-            //    Console.WriteLine("Resize images and Save to ContestImages fold.");
-            //    Console.WriteLine("Put Wish Image width.");
-            //    return;
-            //}
-            //int wth = Convert.ToInt32(args[0]);
-            int wth = 400;
+            if (args.Length != 1)
+            {
+                Console.WriteLine("This Command Execute Following tasks:");
+                Console.WriteLine("Create OrigImage fold");
+                Console.WriteLine("MOVE all image from ContestImages fold to OrigImage");
+                Console.WriteLine("Resize images and Save to ContestImages fold.");
+                Console.WriteLine("Put Wish Image width.");
+                return;
+            }
+            int wth = Convert.ToInt32(args[0]);
+            //int wth = 400;
                        
 
             //Get all photos
