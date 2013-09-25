@@ -21,7 +21,7 @@ namespace ProPlan.ImageResizer
                 Console.WriteLine("Create OrigImage fold");
                 Console.WriteLine("MOVE all image from ContestImages fold to OrigImage");
                 Console.WriteLine("Resize images and Save to ContestImages fold.");
-                Console.WriteLine("Put Wish Image width.");
+                Console.WriteLine("Put wish Image width size.");
                 return;
             }
             int wth = 400;	//set default
