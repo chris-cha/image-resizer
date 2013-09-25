@@ -24,8 +24,12 @@ namespace ProPlan.ImageResizer
                 Console.WriteLine("Put Wish Image width.");
                 return;
             }
-            int wth = Convert.ToInt32(args[0]);
-            //int wth = 400;
+            int wth = 400;	//set default
+            try{
+				wth = Convert.ToInt32(args[0]);
+			}
+			catch(Exception ex){}
+			finally{ wth = 400;}			
                        
 
             //Get all photos
